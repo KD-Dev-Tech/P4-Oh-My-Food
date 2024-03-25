@@ -1,0 +1,24 @@
+.homepage__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-lightgrey-color;
+    text-align: center;
+    
+    
+
+     p {
+        font-weight: 300;
+        font-size: 18px;
+        margin: 0
+    }
+
+    .button {
+    @include button-purple;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    }
+}
+
+
+
