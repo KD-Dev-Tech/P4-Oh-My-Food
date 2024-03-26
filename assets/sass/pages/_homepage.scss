@@ -1,24 +1,60 @@
+/* section info et button explorer*/
+
 .homepage__info {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $background-lightgrey-color;
     text-align: center;
-    
-    
 
-     p {
+    p {
         font-weight: 300;
         font-size: 18px;
-        margin: 0
+        margin: 0;
     }
 
-    .button {
+    .homepage__button--purple {
     @include button-purple;
+    @include shadow;
     margin-top: 30px;
     margin-bottom: 50px;
+    
+        &:hover{
+            @include hover
+        }
     }
 }
 
+/*Section cartes fonctionnement*/
+
+.homepage__fonctionnement{
+    margin-left: 14px; 
+}
+
+.step {
+    list-style: none;
+    padding-left: 14px;
+    
+    
+    .step__card {
+        display: flex;
+        align-items: center;
+        @include card-fonctionnement;
+        @include shadow;
+        font-weight: 500;
+        gap: 20px;
+        margin-bottom: 20px;
+   
+   
+        .step__number {
+            @include round-purple;
+            margin-left: -15px;
+        }
+    }
+}
+
+.step__icon--violet {
+    color: $primary-color;
+}
 
 

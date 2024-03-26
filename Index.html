@@ -18,13 +18,13 @@
         <div class="loader">
 
         </div>
-        <header class="nav-bar">
-            <img class="logo-site" src="assets/images/logo/ohmyfood.png" alt="Logo du site oh my food">           
-            <form method="get" action="" class="search-bar">
-                <div class="location"> 
+        <header class="navbar">
+            <img class="navbar__logo" src="assets/images/logo/ohmyfood.png" alt="Logo du site oh my food">           
+            <form method="get" action="" class="navbar navbar__search">
+                <div class="navbar__icone"> 
                     <i class="fa-solid fa-location-dot"></i>
                 </div> 
-                <input type="search" id="location-search" placeholder="Paris, Belleville">
+                <input type="search" id="navbar__location" placeholder="Paris, Belleville">
             </form>
         </header>
         <main>
@@ -32,11 +32,38 @@
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d’exception,
                     sélectionnés par nos soins.</p>
-                <a class="button" href="#restaurants">Explorer nos restaurants</a>     
+                <a class="homepage__info homepage__button--purple" href="#restaurants">Explorer nos restaurants</a>     
+            </section>    
+            <section class="homepage__fonctionnement">
+                <div class="container__fonctionnement">
+                    <h2 class="title__fonctionnement">Fonctionnement</h2>
+                    <ol class="step">
+                        <li class="step__card">
+                          <div class="step__number"> 1
+                          </div>
+                          <i class="fa-solid fa-mobile-screen-button icons"></i>
+                          Choisissez un restaurant                         
+                        </li>
+                        <li class="step__card">
+                          <div class="step__number"> 2                          
+                          </div>
+                          <i class="fa-solid fa-list-ul icons"></i> 
+                          Composez votre menu
+                        </li>
+                        <li class="step__card">
+                          <div class="step__number"> 3                          
+                          </div>
+                          <div class="step__icon--violet">
+                            <i class="fa-solid fa-store icons"></i>
+                          </div>  
+                            Dégustez au restaurant
+                        </li>
+                      </ol>  
+                </div>    
             </section>
-
-
             
+            <footer>
+            </footer>       
         </main>
     </div>
 </body>
