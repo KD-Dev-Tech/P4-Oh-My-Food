@@ -112,12 +112,11 @@
     
     & i {
         font-weight: 100;
-        opacity: 0;
+        
 
        &:hover {
         font-weight: 900;
-        background-color: linear-gradient($secondary-color -11%, $primary-color);
-        opacity: 1;
+        
     }  
     }
    
