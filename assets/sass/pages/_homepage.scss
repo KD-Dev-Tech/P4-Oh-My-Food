@@ -7,23 +7,33 @@
     background-color: $background-lightgrey-color;
     text-align: center;
 
-    p {
+    & p {
         font-weight: 300;
         font-size: 18px;
         margin: 0;
-    }
+    }   
+}
 
-    .homepage__button--purple {
-    @include button-purple;
-    @include shadow;
+.btn {
     margin-top: 30px;
     margin-bottom: 50px;
-    
-        &:hover{
-            @include hover
-        }
     }
-}
+    
+.homepage__btn--purple {
+    @include button-purple;
+    @include shadow; 
+    justify-content: center;
+    transition: 1s;
+
+    &:hover  {
+        @include hover;
+        transition: 1s;   
+        }
+                  
+    }
+    
+
+
 
 /*Section cartes fonctionnement*/
 
@@ -68,7 +78,6 @@
     
 }
 
-
 .card {
     @include card;
     margin-top: 18px;
@@ -95,11 +104,24 @@
             margin: 0;
         }
 
-        .card__hearticon {
-            padding-right: 25px;
-            font-size: 22px;  
-        }    
 }
+
+.hearticon {
+    padding-right: 25px;
+    font-size: 22px; 
+    
+    & i {
+        font-weight: 100;
+        opacity: 0;
+
+       &:hover {
+        font-weight: 900;
+        background-color: linear-gradient($secondary-color -11%, $primary-color);
+        opacity: 1;
+    }  
+    }
+   
+        }    
 
 .image__container {
     position: relative;
@@ -121,3 +143,4 @@
     }
    
 }
+

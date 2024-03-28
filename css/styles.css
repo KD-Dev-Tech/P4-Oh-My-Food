@@ -71,8 +71,13 @@ input::placeholder {
   font-size: 18px;
   margin: 0;
 }
-.homepage__info .homepage__button--purple {
-  justify-content: center;
+
+.btn {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.homepage__btn--purple {
   border-radius: 25px;
   background: linear-gradient(#ff79da -11%, #9356DC);
   color: white;
@@ -82,12 +87,13 @@ input::placeholder {
   height: 50px;
   width: 218px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  margin-top: 30px;
-  margin-bottom: 50px;
+  justify-content: center;
+  transition: 1s;
 }
-.homepage__info .homepage__button--purple:hover {
+.homepage__btn--purple:hover {
   box-shadow: 0px 6px 12px 3px rgba(0, 0, 0, 0.25);
-  opacity: 0.85;
+  opacity: 0.8;
+  transition: 1s;
 }
 
 /*Section cartes fonctionnement*/
@@ -163,9 +169,19 @@ input::placeholder {
 .card__content .card__subtitle {
   margin: 0;
 }
-.card__content .card__hearticon {
+
+.hearticon {
   padding-right: 25px;
   font-size: 22px;
+}
+.hearticon i {
+  font-weight: 100;
+  opacity: 0;
+}
+.hearticon i:hover {
+  font-weight: 900;
+  background-color: linear-gradient(#ff79da -11%, #9356DC);
+  opacity: 1;
 }
 
 .image__container {
