@@ -1,0 +1,33 @@
+/*  Section Footer  */
+
+.footer__container {
+    background-color: $background-bold-grey;
+    color: #ffffff;
+    padding: 22px 25px;   
+     
+}
+
+.logo__footer {
+    width: 137px;
+    height: 27px;
+
+    .title__footer {
+        @include title-font;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.footer__list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+
+    i {
+        margin-right: 15px;
+        width: 11px;
+        
+    }
+}

@@ -27,14 +27,17 @@
 
 /*Section cartes fonctionnement*/
 
-.homepage__fonctionnement{
-    margin-left: 14px; 
+.container__fonctionnement{
+    margin-left: 20px; 
+    margin-top: 40px;
+    
 }
 
 .step {
     list-style: none;
-    padding-left: 14px;
-    
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 40px;
     
     .step__card {
         display: flex;
@@ -42,11 +45,10 @@
         @include card-fonctionnement;
         @include shadow;
         font-weight: 500;
-        gap: 20px;
+        gap: 25px;
         margin-bottom: 20px;
    
-   
-        .step__number {
+       .step__number {
             @include round-purple;
             margin-left: -15px;
         }
@@ -57,4 +59,65 @@
     color: $primary-color;
 }
 
+/* Section cartes restaurants */
 
+.homepage__restaurant {
+    background: $background-lightgrey-color;
+    box-sizing: border-box;
+    padding: 30px 14px 50px ;
+    
+}
+
+
+.card {
+    @include card;
+    margin-top: 18px;
+    
+   
+    img {
+        @include img-restaurant;
+        
+    }
+}
+
+.card__content{
+    padding-left: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+        .card__title {
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        .card__subtitle{
+            margin: 0;
+        }
+
+        .card__hearticon {
+            padding-right: 25px;
+            font-size: 22px;  
+        }    
+}
+
+.image__container {
+    position: relative;
+
+    .image__restaurant {
+        display: block;   
+    }
+
+    .badge {
+        position: absolute; 
+        top: 10px; 
+        right: 10px;            
+        font-size: 14px;
+        font-weight: 500; 
+        z-index: 1;
+        text-align: center;
+        @include badge-new; 
+
+    }
+   
+}
