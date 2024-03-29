@@ -16,7 +16,7 @@
 
 .btn {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     }
     
 .homepage__btn--purple {
@@ -28,26 +28,34 @@
     &:hover  {
         @include hover;
         transition: 1s;   
-        }
-                  
+        }                
     }
     
-
-
-
 /*Section cartes fonctionnement*/
 
+.homepage__fonctionnement {
+    padding: 30px 20px;
+}
 .container__fonctionnement{
-    margin-left: 20px; 
-    margin-top: 40px;
-    
+    width: 100%;
+    @media (min-width: 1440px) {
+        width: 80%;
+        margin-left: 130px;
+    }  
 }
 
 .step {
     list-style: none;
-    padding-left: 15px;
-    padding-right: 20px;
-    padding-bottom: 40px;
+    padding: 0;
+    @media (min-width: 1440px) {
+        display: flex;
+        gap: 30px;
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+        gap: 30px;
+    }
+
     
     .step__card {
         display: flex;
@@ -57,7 +65,7 @@
         font-weight: 500;
         gap: 25px;
         margin-bottom: 20px;
-   
+        
        .step__number {
             @include round-purple;
             margin-left: -15px;
@@ -74,18 +82,45 @@
 .homepage__restaurant {
     background: $background-lightgrey-color;
     box-sizing: border-box;
-    padding: 30px 14px 50px ;
+    padding: 30px 14px 50px;
+
+    @media (min-width: 1024px ) {
+        padding: 10px;
+    }
     
+}
+.title__restaurant {
+    @media (min-width: 1440px ) {
+        margin-left: 10%;
+    }
+}
+
+.restaurant__card {
+    
+    @media (min-width: 1024px ) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        
+    }
+
+    @media (min-width: 1440px ){
+        margin: 2%;
+    }
 }
 
 .card {
     @include card;
     margin-top: 18px;
+
+    @media (min-width: 1024px ){
+        width: 37%;
+    }
     
    
     img {
-        @include img-restaurant;
-        
+        @include img-restaurant;        
     }
 }
 
@@ -95,15 +130,14 @@
     justify-content: space-between;
     align-items: center;
     
-        .card__title {
-            margin-top: 10px;
-            margin-bottom: 4px;
-        }
+    .card__title {
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
 
-        .card__subtitle{
-            margin: 0;
-        }
-
+    .card__subtitle{
+        margin: 0;
+    }
 }
 
 .hearticon {
@@ -113,14 +147,11 @@
     & i {
         font-weight: 100;
         
-
        &:hover {
-        font-weight: 900;
-        
-    }  
+        font-weight: 900;       
+        }  
     }
-   
-        }    
+}    
 
 .image__container {
     position: relative;
@@ -131,15 +162,13 @@
 
     .badge {
         position: absolute; 
-        top: 10px; 
-        right: 10px;            
+        top: 15px; 
+        right: 15px;            
         font-size: 14px;
         font-weight: 500; 
         z-index: 1;
         text-align: center;
         @include badge-new; 
-
-    }
-   
+    }  
 }
 

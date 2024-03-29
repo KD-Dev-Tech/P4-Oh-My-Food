@@ -1,20 +1,28 @@
 /*  Section Footer  */
 
-.footer__container {
+.homepage__footer {
     background-color: $background-bold-grey;
     color: #ffffff;
-    padding: 22px 25px;   
-     
+    padding: 22px 25px;
+
+    
+    .footer__container {
+        @media (min-width: 1024px) {
+            align-items: center;  
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 20px;         
+        }  
+    }
 }
 
-.logo__footer {
-    width: 137px;
-    height: 27px;
 
+.logo__footer {
+    
     .title__footer {
         @include title-font;
         font-size: 18px;
-        margin: 0;
+        margin: 0;   
     }
 }
 
@@ -24,6 +32,12 @@
     padding: 0;
     flex-direction: column;
     gap: 10px;
+
+    @media (min-width: 1024px ) {       
+        flex-direction: initial;
+        gap: 30px;
+        margin-right: 90px;
+    }     
 
     i {
         margin-right: 15px;
