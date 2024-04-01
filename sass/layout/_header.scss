@@ -1,3 +1,5 @@
+/* Header homepage */
+
 .navbar {
     display: flex;
     flex-direction: column;
@@ -5,8 +7,8 @@
     justify-content: center;
 }
 .navbar__logo {
-        height: 36px;
-        margin: 14px auto;
+    height: 30px;
+    margin: 20px auto;
 }
  
 .navbar__search {
@@ -39,3 +41,30 @@ input {
         width: 115px;
     }    
 }
+
+/* Header menu */
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    & .nav__menu {
+        width: 100%;
+        gap: 50px;
+        justify-content: flex-start;
+        padding: 10px;
+
+       & i { 
+        font-size: 20px;
+        margin-left: 10px; 
+        }
+
+        & .navbar__logo {
+            margin-bottom: 0;
+            margin-left: 10px;   
+        }
+    }
+}
+

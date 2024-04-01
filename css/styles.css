@@ -17,6 +17,7 @@ a {
   color: inherit;
 }
 
+/* Header homepage */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -25,8 +26,8 @@ a {
 }
 
 .navbar__logo {
-  height: 36px;
-  margin: 14px auto;
+  height: 30px;
+  margin: 20px auto;
 }
 
 .navbar__search {
@@ -58,6 +59,27 @@ input::placeholder {
   width: 115px;
 }
 
+/* Header menu */
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu .nav__menu {
+  width: 100%;
+  gap: 50px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.header__menu .nav__menu i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.header__menu .nav__menu .navbar__logo {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
 /* section info et button explorer*/
 .homepage__info {
   display: flex;
@@ -85,7 +107,8 @@ input::placeholder {
   font-size: 16px;
   font-weight: 500;
   height: 50px;
-  width: 218px;
+  text-align: center;
+  align-content: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   justify-content: center;
   transition: 1s;
@@ -219,15 +242,40 @@ input::placeholder {
   margin: 0;
 }
 
-.hearticon {
-  padding-right: 25px;
-  font-size: 22px;
+.menu__favorite {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
-.hearticon i {
-  font-weight: 100;
+.menu__favorite .icon-fill {
+  color: #9356DC;
+  opacity: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.hearticon i:hover {
-  font-weight: 900;
+.menu__favorite .icon-empty {
+  opacity: 1;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+  position: absolute;
+}
+.menu__favorite:hover .icon-fill {
+  opacity: 1;
+}
+.menu__favorite:hover .icon-empty {
+  opacity: 0;
 }
 
 .image__container {
@@ -251,7 +299,7 @@ input::placeholder {
   padding: 5px;
 }
 
-/*  Section Footer  */
+/*  Section Footer accueil & menu  */
 .homepage__footer {
   background-color: #353535;
   color: #ffffff;
@@ -289,6 +337,104 @@ input::placeholder {
 .footer__list i {
   margin-right: 15px;
   width: 11px;
+}
+
+/*Mise en pages des menus*/
+.image__menu {
+  width: 100%;
+  height: 283px;
+}
+.image__menu img {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+}
+
+.background__menu {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  z-index: 1;
+  margin-top: -23%;
+  position: relative;
+  padding: 15px;
+}
+.background__menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.background__menu .title__page__restaurant {
+  font-family: "Shrikhand", sans-serif;
+}
+.background__menu .title__page__restaurant h1 {
+  font-weight: 400;
+  font-size: 28px;
+  display: inline;
+}
+
+.title__menu {
+  width: 100%;
+}
+.title__menu h2 {
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.title__menu .title__bar {
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+}
+
+.card__menu {
+  margin-bottom: 40px;
+}
+
+.step__card__menu {
+  background: white;
+  border-radius: 15px;
+  margin-top: 12px;
+  padding: 6px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.step__card__menu .title__plat {
+  font-size: 18px;
+  font-weight: 500;
+}
+.step__card__menu p {
+  margin: 7px;
+  font-weight: 300;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.step__card__menu p .prix__menu {
+  font-weight: 700;
+}
+
+.btn__menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.btn__menu .btn {
+  border-radius: 25px;
+  background: linear-gradient(#ff79da -11%, #9356DC);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  width: 186px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
