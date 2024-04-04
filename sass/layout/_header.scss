@@ -44,27 +44,38 @@ input {
 
 /* Header menu */
 
-.header__menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.header__menu {
+    position: relative;
 
-    & .nav__menu {
-        width: 100%;
-        gap: 50px;
-        justify-content: flex-start;
+    .nav__menu {
         padding: 10px;
+    }
 
-       & i { 
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        height: 30px;
+    }
+}    
+
+ .nav__icone {
+    width: 30px;
+    margin-top: 15px;
+    position: absolute;
+
+    & .fa-arrow-left { 
         font-size: 20px;
         margin-left: 10px; 
-        }
+    }       
+}   
 
-        & .navbar__logo {
-            margin-bottom: 0;
-            margin-left: 10px;   
-        }
-    }
-}
+       
+
+
+    
+
+
+
+
 

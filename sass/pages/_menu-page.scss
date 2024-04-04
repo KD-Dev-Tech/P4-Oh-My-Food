@@ -3,12 +3,16 @@
 .image__menu {
     width: 100%;
     height: 283px;
+    @media (min-width: 1440px ){
+        height: 400px;   
+    }
     
-
     & img {
         width: 100%;
         position: absolute;
-        margin: 0;
+        object-fit: cover;
+        height: inherit;
+        
     }
 }
 
@@ -18,9 +22,21 @@
     background: $background-lightgrey-color;
     border-radius: 40px 40px 0px 0px;
     z-index: 1;
-    margin-top: -23%;
+    margin-top: -60px;
     position: relative;
     padding: 15px;
+    @media (min-width: 1024px ){
+        margin-top: -30px;
+        margin-right: 193px;
+        margin-left: 193px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media (min-width: 1440px ){
+        padding-left: 210px;
+        padding-right: 210px;
+        padding-top: 50px;
+    }
 
     .container {
         display: flex;
@@ -28,7 +44,11 @@
         justify-content: space-between;
         margin-right: 20px;
         margin-top: 15px;
-        margin-bottom: 40px
+        margin-bottom: 40px;
+        @media (min-width: 1024px ){
+            justify-content: center;
+            gap: 30px;
+        }
     }
 
 
@@ -64,27 +84,68 @@
     margin-bottom: 40px
 }
 
-.step__card__menu {
+.container__menu {
+    display: flex;
+    margin-top: 12px;
+    height: 80px;
+    overflow: hidden;
+    
     @include card-menu;
     @include shadow;
-    
+
+    &:hover .menu__favorite {
+        margin-right: 0; 
+           
+    }   
+}
+
+.step__card__menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
     
     .title__plat {
         font-size: 18px;
         font-weight: 500;
+        
     }
+
     & p {
         margin: 7px;
         font-weight: 300;
-        font-size: 15px;
-        display: flex;
-        justify-content: space-between;
-
-        .prix__menu {
-            font-weight: 700;
-            
-        }
+        font-size: 15px;        
     }  
+
+    .prix__menu {
+        font-weight: 700;
+        align-content: center;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+}
+
+.plat__menu {
+    @include text-ellipsis;
+
+}
+
+.menu__favorite {
+    display: flex;
+    justify-content: center;
+    background: $tertiairy-color;
+    height: inherit;
+    margin-right: -100px;
+    transition: margin-right 0.2s ease-in-out;
+    width: 60px;
+
+    & .fa-circle-check {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        color: white;
+    }
 }
 
 .btn__menu {
@@ -94,7 +155,15 @@
 
     .btn {
         @include button-purple;
+        @include shadow;
         width: 186px;
         margin: 0;
+        transition: 1s;
+
+        &:hover  {
+            @include hover;
+            transition: 1s;   
+            }  
     }
 }
+
