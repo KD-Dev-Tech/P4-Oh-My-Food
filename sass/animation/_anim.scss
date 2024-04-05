@@ -1,0 +1,30 @@
+
+
+@keyframes translate-card {
+  from {
+    margin-top: 200%;
+    width: 180%;
+    
+  }
+  
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 25%;
+  }
+
+  75% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+

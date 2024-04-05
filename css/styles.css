@@ -1,3 +1,24 @@
+@keyframes translate-card {
+  from {
+    margin-top: 200%;
+    width: 180%;
+  }
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 25%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+  to {
+    width: 100%;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -250,7 +271,7 @@ input::placeholder {
   height: 2rem;
   width: 2rem;
   padding: 0;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -407,6 +428,18 @@ input::placeholder {
   font-weight: 400;
   font-size: 28px;
   display: inline;
+}
+
+.anim__menu1 {
+  animation: translate-card 2s ease-in-out;
+}
+
+.anim__menu2 {
+  animation: translate-card 3s ease-in-out;
+}
+
+.anim__menu3 {
+  animation: translate-card 4s ease-in-out;
 }
 
 .title__menu {

@@ -145,12 +145,12 @@
     height: 2rem;
     width: 2rem;
     padding: 0;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    
+
     .icon-fill{
         color: #9356DC;
         opacity: 0;
@@ -163,6 +163,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    
     .icon-empty{
         
         opacity: 1;
@@ -179,7 +180,9 @@
     &:hover .icon-empty{
         opacity: 0;
     }
+    
 }    
+
 
 
 .image__container {
