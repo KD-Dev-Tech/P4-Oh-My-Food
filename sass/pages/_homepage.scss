@@ -35,13 +35,16 @@
 /*Section cartes fonctionnement*/
 
 .homepage__fonctionnement {
+    display: flex;
+    justify-content: center;
     padding: 30px 20px;
+    
 }
 .container__fonctionnement{
     width: 100%;
     @media (min-width: 1440px) {
         width: 80%;
-        margin-left: 130px;
+        
     }  
 }
 

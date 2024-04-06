@@ -2,7 +2,9 @@
 
 @import "abstracts/mixins";
 
-@import "animation/anim.scss";
+@import "animation/anim-loader";
+
+@import "animation/anim-menu.scss";
 
 @import "layout/general"; 
 

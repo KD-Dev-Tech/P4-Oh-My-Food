@@ -51,7 +51,6 @@
         }
     }
 
-
     .title__page__restaurant {
         @include title-font;
 
@@ -101,7 +100,6 @@
     margin-top: 12px;
     height: 80px;
     overflow: hidden;
-    
     @include card-menu;
     @include shadow;
 
@@ -120,8 +118,7 @@
     
     .title__plat {
         font-size: 18px;
-        font-weight: 500;
-        
+        font-weight: 500;     
     }
 
     & p {
@@ -175,7 +172,7 @@
         &:hover  {
             @include hover;
             transition: 1s;   
-            }  
+        }  
     }
 }
 
