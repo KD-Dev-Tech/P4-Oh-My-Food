@@ -11,7 +11,13 @@
         font-weight: 300;
         font-size: 18px;
         margin: 0;
-    }   
+    }
+    
+    & h1 {
+        @media (min-width: 1024px) {
+            font-size: 40px;
+        }
+    }
 }
 
 .btn {
@@ -37,29 +43,22 @@
 .homepage__fonctionnement {
     display: flex;
     justify-content: center;
-    padding: 30px 20px;
-    
+    padding: 30px 20px;    
 }
 .container__fonctionnement{
     width: 100%;
     @media (min-width: 1440px) {
-        width: 80%;
-        
+        width: 80%;       
     }  
 }
 
 .step {
     list-style: none;
     padding: 0;
-    @media (min-width: 1440px) {
-        display: flex;
-        gap: 30px;
-    }
     @media (min-width: 1024px) {
-        display: flex;
-        gap: 30px;
-    }
-
+            display: flex;
+            gap: 40px;
+        }
     
     .step__card {
         display: flex;
@@ -99,14 +98,12 @@
     }
 }
 
-.restaurant__card {
-    
+.restaurant__card { 
     @media (min-width: 1024px ) {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;       
     }
 
     @media (min-width: 1440px ){
@@ -122,7 +119,6 @@
         width: 37%;
     }
     
-   
     img {
         @include img-restaurant;        
     }
@@ -144,7 +140,7 @@
     }
 }
 
-.restaurant__favorite{ 
+.favorite__restaurant{ 
     height: 2rem;
     width: 2rem;
     padding: 0;
@@ -168,7 +164,6 @@
     }
     
     .icon-empty{
-        
         opacity: 1;
         font-size: 1.6rem;
         cursor: pointer;
@@ -183,9 +178,22 @@
     &:hover .icon-empty{
         opacity: 0;
     }
-    
 }    
 
+input[type="checkbox"]#favorite1,
+input[type="checkbox"]#favorite2,
+input[type="checkbox"]#favorite3,
+input[type="checkbox"]#favorite4 {
+    display: none;
+
+    &:checked {
+      ~ label {
+        .icon-fill {
+          @include favorite-restaurant;
+        }
+      }
+    }
+  }
 
 
 .image__container {

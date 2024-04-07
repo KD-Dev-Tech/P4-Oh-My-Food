@@ -11,8 +11,7 @@
         width: 100%;
         position: absolute;
         object-fit: cover;
-        height: inherit;
-        
+        height: inherit;       
     }
 }
 
@@ -95,6 +94,8 @@
     margin-bottom: 40px
 }
 
+
+
 .container__menu {
     display: flex;
     margin-top: 12px;
@@ -104,8 +105,7 @@
     @include shadow;
 
     &:hover .menu__favorite {
-        margin-right: 0; 
-           
+        margin-right: 0;   
     }   
 }
 
@@ -137,7 +137,6 @@
 
 .plat__menu {
     @include text-ellipsis;
-
 }
 
 .menu__favorite {
@@ -156,6 +155,29 @@
         color: white;
     }
 }
+
+
+input[type="checkbox"]#favorite-menu1,
+input[type="checkbox"]#favorite-menu2,
+input[type="checkbox"]#favorite-menu2,
+input[type="checkbox"]#favorite-menu3,
+input[type="checkbox"]#favorite-menu4,
+input[type="checkbox"]#favorite-menu5,
+input[type="checkbox"]#favorite-menu6,
+input[type="checkbox"]#favorite-menu7,
+input[type="checkbox"]#favorite-menu8,
+input[type="checkbox"]#favorite-menu9,
+input[type="checkbox"]#favorite-menu10 {
+    display: none;
+
+    &:checked {
+      ~ label {
+        .menu__favorite {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
 .btn__menu {
     display: flex;

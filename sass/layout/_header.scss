@@ -8,7 +8,7 @@
 }
 .navbar__logo {
     height: 30px;
-    margin: 20px auto;
+    margin: 30px auto;
 }
  
 .navbar__search {
@@ -22,9 +22,8 @@
     gap: 17px;
     z-index: 1;
 
-    @media (min-width: 768px) {
-        margin-top: 20px;
-        
+    @media (min-width: 1024px) {
+        box-shadow: none;
     }
 }
 
@@ -32,13 +31,13 @@ input {
     border: none;
     outline: none;
     background: none; 
-    width: 115px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 16px;
     
     &::placeholder{
-        color: #353535;
-        font-weight: 500;
-        font-size: 16px;
-        width: 115px;
+        color: #353535; 
+        width: 120px;
     }    
 }
 
@@ -48,7 +47,7 @@ input {
     position: relative;
 
     .nav__menu {
-        padding: 10px;
+        padding: 23px;
     }
 
     .logo {
