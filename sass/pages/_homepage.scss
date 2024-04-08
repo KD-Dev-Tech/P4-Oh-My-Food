@@ -120,6 +120,7 @@
 
 .card {
     @include card;
+    @include shadow;
     margin-top: 18px;
 
     @media (min-width: 1024px ){
@@ -159,24 +160,15 @@
     overflow: hidden;
 
     .icon-fill{
-        color: #9356DC;
-        opacity: 0;
-        font-size: 1.6rem;
-        cursor: pointer;
+        @include favorite-icone-fill;
         transition: 0.2s linear;
-        position: absolute;
-        z-index: 2;
-        background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        
     }
     
     .icon-empty{
-        opacity: 1;
-        font-size: 1.6rem;
-        cursor: pointer;
+        @include favorite-icone-empty;
         transition: 0.2s linear;
-        position: absolute;
+        
     }
 
     &:hover .icon-fill{

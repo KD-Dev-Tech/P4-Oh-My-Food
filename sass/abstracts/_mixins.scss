@@ -5,6 +5,25 @@
     opacity: 1;
 }
 
+@mixin favorite-icone-empty {
+    opacity: 1;
+    font-size: 1.6rem;
+    cursor: pointer;  
+    position: absolute;
+}
+
+@mixin favorite-icone-fill {
+    opacity: 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 @mixin text-font {
     font-family: "Roboto", sans-serif;
 }
@@ -29,8 +48,9 @@
     font-size: 16px;
     font-weight: 500;
     height: 50px;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin round-purple {

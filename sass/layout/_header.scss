@@ -34,12 +34,12 @@ input {
     border: none;
     outline: none;
     background: none; 
-    width: 120px;
+    width: 130px;
     font-weight: bold;
     font-size: 16px;
     
     &::placeholder{
-        color: #353535; 
+        color: black; 
         width: 120px;
     }    
 }
