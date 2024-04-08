@@ -8,7 +8,10 @@
 }
 .navbar__logo {
     height: 30px;
-    margin: 30px auto;
+    margin: 20px auto;
+    @media (min-width: 1024px) {
+        height: 34px;
+    }
 }
  
 .navbar__search {

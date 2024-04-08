@@ -14,15 +14,17 @@
     }
     
     & h1 {
+        width: 75%;
         @media (min-width: 1024px) {
             font-size: 40px;
+            
         }
     }
 }
 
 .btn {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 57px;
     width: 228px;
     }
     
@@ -43,18 +45,23 @@
 .homepage__fonctionnement {
     display: flex;
     justify-content: center;
-    padding: 30px 20px;    
+    padding: 40px 20px;    
 }
 .container__fonctionnement{
     width: 100%;
     @media (min-width: 1440px) {
         width: 80%;       
-    }  
+    } 
+    & h2 {
+        margin: 0;
+    } 
 }
 
 .step {
     list-style: none;
     padding: 0;
+    margin-top: 26px;
+    margin-left: 10px;
     @media (min-width: 1024px) {
             display: flex;
             gap: 40px;
@@ -67,7 +74,7 @@
         @include shadow;
         font-weight: 500;
         gap: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         
        .step__number {
             @include round-purple;
@@ -85,7 +92,7 @@
 .homepage__restaurant {
     background: $background-lightgrey-color;
     box-sizing: border-box;
-    padding: 30px 14px 50px;
+    padding: 30px 14px 65px;
 
     @media (min-width: 1024px ) {
         padding: 10px;
@@ -129,6 +136,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 20px;
     
     .card__title {
         margin-top: 10px;
@@ -180,10 +188,7 @@
     }
 }    
 
-input[type="checkbox"]#favorite1,
-input[type="checkbox"]#favorite2,
-input[type="checkbox"]#favorite3,
-input[type="checkbox"]#favorite4 {
+input[type="checkbox"]#favorite1 {
     display: none;
 
     &:checked {

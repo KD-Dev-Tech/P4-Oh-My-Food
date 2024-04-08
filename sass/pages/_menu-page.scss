@@ -156,29 +156,6 @@
     }
 }
 
-
-input[type="checkbox"]#favorite-menu1,
-input[type="checkbox"]#favorite-menu2,
-input[type="checkbox"]#favorite-menu2,
-input[type="checkbox"]#favorite-menu3,
-input[type="checkbox"]#favorite-menu4,
-input[type="checkbox"]#favorite-menu5,
-input[type="checkbox"]#favorite-menu6,
-input[type="checkbox"]#favorite-menu7,
-input[type="checkbox"]#favorite-menu8,
-input[type="checkbox"]#favorite-menu9,
-input[type="checkbox"]#favorite-menu10 {
-    display: none;
-
-    &:checked {
-      ~ label {
-        .menu__favorite {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
 .btn__menu {
     display: flex;
     justify-content: center;
