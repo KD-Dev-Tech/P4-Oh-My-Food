@@ -62,15 +62,15 @@
 }
 
 .anim__menu1 {
-    animation: translate-card 2s ease-in-out;
+    animation: translate-card 1.5s ease-in-out;
   }
 
 .anim__menu2 {
-    animation: translate-card 3s  ease-in-out ;
+    animation: translate-card 2s  ease-in-out ;
   }
 
 .anim__menu3 {
-    animation: translate-card 4s ease-in-out;
+    animation: translate-card 2.5s ease-in-out;
   }
 
 .title__menu {
@@ -93,8 +93,6 @@
 .card__menu {
     margin-bottom: 40px
 }
-
-
 
 .container__menu {
     display: flex;
